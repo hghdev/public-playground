@@ -1,0 +1,11 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+Language: Cpp
+BasedOnStyle: Microsoft
+PointerAlignment: Left
+MaxEmptyLinesToKeep: 2
+FixNamespaceComments: true
+AccessModifierOffset: -4
+BraceWrapping:
+    BeforeLambdaBody: true
+AllowShortLambdasOnASingleLine: false
+BreakBeforeBinaryOperators: All
