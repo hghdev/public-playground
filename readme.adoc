@@ -1,0 +1,28 @@
+= Public Playground
+
+
+== Install SFML with VCPKG
+
+----
+$ .devcontainer/scripts/vcpkg/install_sfml.bash 
+----
+
+The package sfml provides CMake targets:
+----
+find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
+target_link_libraries(main PRIVATE sfml-system sfml-network sfml-graphics sfml-window)
+----
+
+If you want SFML to provide an implementation of main():
+----
+target_link_libraries(main PRIVATE sfml-main)
+----
+
+----
+libsfml-dev
+libsfml-audio2.5
+libsfml-graphics2.5
+libsfml-network2.5
+libsfml-system2.5
+libsfml-window2.5
+----
