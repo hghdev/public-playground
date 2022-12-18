@@ -1,0 +1,11 @@
+== Read Me
+
+----
+$ ./build.bash 
++ ./hello
+Failed to open joystick /dev/input/js0: 2
+X Error of failed request:  BadMatch (invalid parameter attributes)
+  Major opcode of failed request:  1 (X_CreateWindow)
+  Serial number of failed request:  52
+  Current serial number in output stream:  53
+----
